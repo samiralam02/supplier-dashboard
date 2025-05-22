@@ -1,0 +1,124 @@
+.todo-section {
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+}
+
+.todo-section h2 {
+  position: relative;
+  left: 185px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.todo-card {
+  background-color: white;
+  width: 310px;
+  height: 269px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  color: #666;
+}
+
+.card-body {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.card-chart {
+  flex-shrink: 0;
+}
+
+.card-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.card-details p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-details h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.card-details small {
+  color: #777;
+  font-size: 0.75rem;
+}
+
+.card-details a {
+  font-size: 0.85rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-details a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .cards-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-card {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+  }
+}

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F3F2F2;
+  color: #333;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 0 1rem;
+  }
+}
